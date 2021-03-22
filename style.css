@@ -1,0 +1,642 @@
+/* design general ----------- */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+/* design typographique ----------- */
+
+/* titre*/
+
+h2{
+	font-family: font-family: 'Space Grotesk', sans-serif;
+	color: black;
+	text-align: center;
+	font-size: 8vh;
+	margin-left: 2%;
+	padding-top: 3vh;
+}
+
+h3{
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+/* header ----------------- */
+
+header{
+	width: 100vw;
+	height: 120px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	z-index: 9999;
+	
+}
+.logo{
+	height: 9vh;
+}
+
+.menufantome{
+	width: 100vw;
+	height: 120px;
+
+}
+
+label{
+	font-size: 40px;
+	display: none;
+}
+
+#switch {
+	display: none;
+} 
+
+nav a:hover{
+	background-color: black;
+	color: white;
+}
+
+@media (max-width: 700px){
+	header{
+		display: block;
+	}
+
+	.logo{
+    	float: left;
+	}
+
+
+	nav{
+		display: none;
+	}
+
+	label{
+		display: block;
+		float: right;
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+
+	#switch:checked + nav{
+		display: block;
+		clear: both;
+		width: 100%;
+		border-top: 2px solid black;
+	}
+
+	nav a{
+		width: 100%;
+		background-color: white;
+		display: block;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 2px solid black;
+
+	}
+}
+
+.logo{
+	height: 120px;
+    margin-left: 10%;
+    width: auto;
+
+}
+
+.boutonMenu{
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	text-decoration: none;
+	margin-right: 25px;
+}
+
+
+
+
+
+
+/* section 1 ------------------ */
+
+.section1{
+	background-image: url(image/section4.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100vw;
+	min-height: 90vh;
+}
+
+	
+.textesection1{
+	height: 20%;
+	text-align: left;
+	color: black;
+	font-family: 'Open Sans', sans-serif;
+	padding-top: 20vh;
+
+}
+
+@media (min-width: 701px){
+	.cartesection1{
+		width: 30%;
+		min-height: 30vh;
+		display: flex;
+		float: left;
+		margin-left: 10%;
+	}
+}
+
+@media (max-width: 700px){
+	.cartesection1{
+		width: 50%;
+		min-height: 30vh;
+		display: flex;
+		padding-bottom: 3%;
+		width: 100%;
+	}
+
+	.section1{
+		min-height: 80vh;
+		background-position: 55%;
+		background-size: 700%;
+
+	}
+
+	.textesection1{
+		width: 95%;
+		font-size: 80%;
+		text-align: left;
+		margin-left: 1%;
+
+	}
+}
+
+
+/* section 2 ------------------- */
+.section2{
+	width: 100vw;
+	min-height: 100vh;
+	display: table;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	vertical-align: center
+	justify-content: center;
+	background-color: #FCFCFF
+
+}
+
+}
+.cartesection2{
+	width: 90%;
+	display: flex;
+	margin-left: 5vh;
+	align-items: center;
+	min-height: 25vh; 
+	flex-direction: row;
+}
+
+.photo{
+	width: 100vw;
+}
+	
+
+.textesection2{
+	text-align: center;
+	width: 70%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	margin: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+
+.video{
+	height: 500px;
+	padding-left: 50%;
+	margin-left: -250px;
+	
+}
+@media (max-width: 700px){
+	.video{
+		height: 300px;
+		padding-left: 50%;
+		margin-left: -150px;
+	}
+	.cartesection2{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.textesection2{
+		width: 100%;
+		min-height: 30vh;
+		font-size: 80%;
+		display: flex;
+		margin-right: 5%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		text-align: left;
+	}
+}
+
+
+
+
+
+
+
+
+/* section 3 --------------------- */
+.section3{
+	width: 100vw;
+	min-height: 95vh;
+	background-image: url(image/devialet.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	
+}
+
+
+.blocksection3{
+	width: 25%;
+	padding-top: 30%;
+	padding-bottom: 5%;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 10%;
+	padding-left: 1%;	
+}
+
+.blocksection3bis{
+	width: 25%;
+	padding-top: 3%;
+	padding-bottom: 15%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 10%;
+}
+
+
+.titresection3{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	animation-name: ChangementCouleur;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	padding: 2%;
+	margin: 10px;
+}
+
+@keyframes ChangementCouleur{
+	0%{background-color: #72b6f6;}
+	50%{background-color: #b872f6;}
+	100%{background-color: #72b6f6;}
+}
+
+
+
+.imagesection3{
+	width: 20vw;
+	height: 15vw;
+	border-radius: 50%;
+	border: 3px solid black;
+	filter: saturate(0) blur(2px);
+	margin-top: 20px;
+}
+
+.imagesection3:hover {
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	animation-name: arrondie;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	filter: saturate(1) blur(0px);
+}
+
+@keyframes arrondie{
+	0%{
+		border-radius: 50%; 
+		filter: saturate(0) blur(2px);
+	}
+
+	100%{
+		border-radius: 20%; 
+		filter: saturate(1) blur(0px);
+	}
+}
+
+.textesection3{
+	height: 20%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+.textesection31{
+	height: 20%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+}
+
+.textesection32{
+	height: 20%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+}
+
+
+@media (max-width: 700px){
+	.section3{
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		background-position: 65%;
+		background-size: 700%;
+		background-repeat: no-repeat;
+	}
+
+
+	.imagesection3{
+		width: 60vw;
+		height: 45vw;
+		border-radius: 50%;
+		border: 3px solid black;
+		filter: saturate(0) blur(2px);
+		margin-top: 5px;
+	}
+
+	.blocksection3{
+		width: 80%;
+		padding-top: 2%;
+		text-align: right;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 10%;	
+	}
+
+	.blocksection3bis{
+		width: 80%;
+		padding-top: 2%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 10%;
+	}
+
+	.titresection3{
+		font-family: 'Open Sans', sans-serif;
+		text-align: center;
+		font-size: 20px;
+		color: white;
+		animation-name: ChangementCouleur;
+		animation-duration: 5s;
+		animation-iteration-count: infinite;
+		padding: 2%;
+		margin: 10px;
+	}
+	.textesection3{
+		height: 10%;
+		font-size: 80%;
+		font-family: 'Open Sans', sans-serif;
+		text-align: left;
+	}
+
+	.textesection31{
+		height: 10%;
+		font-size: 80%;
+		font-family: 'Open Sans', sans-serif;
+		text-align: left;
+	}
+
+	.textesection32{
+		height: 10%;
+		font-size: 80%;
+		font-family: 'Open Sans', sans-serif;
+		text-align: left;
+	}
+
+
+
+
+
+}
+
+
+
+
+/* section 4 --------------------- */
+.section4{
+	width: 100vw;
+	min-height: 90vh;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+	background-color: #F0F0F0
+
+}
+
+.cartesection4{
+	display: flex;
+	margin-left: 2vh;
+	margin-right: 2vh;
+	align-items: center;
+	min-height: 25vh; 
+	flex-direction: row;
+	padding-top: 2%;
+}
+
+
+.imagesection4{
+	width: 10vw;
+	margin-top: 20px;
+}
+
+
+.imagesection4bis{
+	width: 15vw;
+	margin-left: 50%;
+}
+
+
+
+.textesection4{
+	width: 50%;
+	min-height: 40%;
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 1%;
+}
+
+.textesection4bis{
+	width: 50%;
+	min-height: 40%;
+	font-family: 'Open Sans', sans-serif;
+	margin-left: 1%;
+}
+
+@media (max-width: 700px){
+	.cartesection4{
+		padding-top: 5%;
+		padding-bottom: 5%;
+		flex-direction: column;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.imagesection4{
+		width: 30vw;
+		margin: auto;
+	}
+	.imagesection4bis{
+		width: 40vw;
+		margin: auto;
+	}
+	.textesection4{
+		width: 90%;
+		min-height: 40%;
+		font-size: 80%;
+		margin-left: 1%;
+	}
+
+	.textesection4bis{
+		width: 90%;
+		min-height: 40%;
+		font-size: 80%;
+		margin-left: 1%;
+	}
+
+}
+
+/* section 5 ______________________ */
+
+.section5{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	min-height: 60vh;
+	background-image: url(image/irongrip.jpg);
+}
+ .imagesection5{
+ 	width: 5%;
+ 	padding-top: 4%;
+ }
+
+ .imagesection5logo{
+ 	height: 9vh;
+ 	padding-top: 4%;
+ }
+
+ .textesection5{
+ 	color: white;
+ 	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	margin-top: 1%;
+
+ }
+
+ @media (max-width: 700px){
+ 	.section5{
+		display: flex;
+		width: 100vw;
+		min-height: 40vh;
+		
+	}
+	 .imagesection5{
+	 	width: 9%;
+	 	padding-top: 9%;
+	 }
+
+	 .imagesection5logo{
+	 	height: 9vh;
+	 	padding-top: 9%;
+	 }
+
+ }
+
+
+
+
+
+/* footer ---------------------- */
+
+footer{
+	width: 100vw;
+	height: 100px;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer a{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	text-decoration: none;
+	margin-right: 25px;
+}
+
+
+@media (max-width: 700px){
+	footer{
+		width: 100vw;
+		height: 70px;
+
+	}
+
+	footer a{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 70%;
+		color: white;
+		text-decoration: none;
+		margin-right: 25px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
